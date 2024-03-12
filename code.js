@@ -2,13 +2,13 @@
 // understand the structure of each permutation, and the way to
 // count the permutations was a great idea!
 
-function permutationCheck(arr, currPos) 
+function permutationCheck(arr, currPos, perm) 
 {
   let check = false;
   for (let i = currPos; i < arr.length; i++) 
   {
     swap(arr, i, currPos);
-    check = permutationCheck(arr, currPos + 1);
+    check = permutationCheck(arr, currPos + 1, perm);
     if (check == true) 
     {
       return true;
@@ -46,7 +46,7 @@ function permutationSort(a)
 {
   var perm = [0];
   perm[0] = 0;
-  if (permutationCheck(a, 0) == true) 
+  if (permutationCheck(a, 0, perm) == true) 
   {
     console.log(a);
     return perm[0];
