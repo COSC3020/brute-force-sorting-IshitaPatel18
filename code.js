@@ -41,7 +41,7 @@ function swap(arr, first, second)
   arr[second] = tmp;
 }
 
-let perm = [0];
+
 function permutationSort(a) 
 {
   var perm = [0];
