@@ -25,19 +25,19 @@ most important part. Add your answer to this markdown file.
 My answer: 
 
 The best case input is the first permutation that was checked which would
-result in a complexity of $/Theta(n)$ because the sortCheck function would
+result in a complexity of $\Theta(n)$ because the sortCheck function would
 be called on the first permutation to check if it is sorted, and because
 that function contains a for loop that iterates over the whole array, the
-complexity is $/Theta(n)$. The worst case input would be the last permutation
-that is checked and it would result in a complexity of $/Theta(n * n!)$. My reasoning
+complexity is $\Theta(n)$. The worst case input would be the last permutation
+that is checked and it would result in a complexity of $\Theta(n * n!)$. My reasoning
 for the n! comes from the recurssive call that basically starts by checking n then n-1
 then n-2 and so on which represents n!. Now, the for loop in sortCheck that is called in 
 permutationCheck represents n because it is iterating over the whole array, but because 
 the recursive call to permutationCheck happens within the original for loop in permutationCheck, 
-it acts like a nested loop which results in $/Theta(n * n!)$. If we were to create permutations
+it acts like a nested loop which results in $\Theta(n * n!)$. If we were to create permutations
 based on pure randomness, then the best case complexity would stay the same as it would be the first
 permutation we see, and the sortCheck for loop would do n iterations, but the
-worst case complexity would become $/Theta(/infty)$ because there is no
+worst case complexity would become $\Theta(/infty)$ because there is no
 guarantee that the sorted permutation ever occurs, only because there is no memory associated
 with the permutations we have already tried. Since, there is no backtracking of what we have done
 we can't guarantee any certain complexity besides infinity, because the random
