@@ -37,7 +37,7 @@ the recursive call to permutationCheck happens within the original for loop in p
 it acts like a nested loop which results in $\Theta(n * n!)$. If we were to create permutations
 based on pure randomness, then the best case complexity would stay the same as it would be the first
 permutation we see, and the sortCheck for loop would do n iterations, but the
-worst case complexity would become $\Theta(/infty)$ because there is no
+worst case complexity would become $\Theta(\infty)$ because there is no
 guarantee that the sorted permutation ever occurs, only because there is no memory associated
 with the permutations we have already tried. Since, there is no backtracking of what we have done
 we can't guarantee any certain complexity besides infinity, because the random
