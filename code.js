@@ -45,6 +45,7 @@ function swap(arr, first, second)
 function permutationSort(a) 
 {
   var perm = [0];
+  perm[0] = 0;
   if (permutationCheck(a, 0) == true) 
   {
     console.log(a);
